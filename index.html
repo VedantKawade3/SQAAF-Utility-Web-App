@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Privacy Policy</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f9f9f9;
+            color: #333;
+            padding: 2rem;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h1 {
+            color: #4CAF50;
+        }
+
+        h2 {
+            margin-top: 2rem;
+            color: #333;
+        }
+
+        .translate-buttons {
+            margin-bottom: 20px;
+        }
+
+        .translate-buttons button {
+            padding: 8px 14px;
+            font-size: 14px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="translate-buttons">
+        <button onclick="setLanguage('hi')">हिंदी मे</button>
+        <button onclick="setLanguage('mr')">मराठी मध्ये</button>
+    </div>
+
+    <div id="policy">
+        <h1>Privacy Policy</h1>
+        <p>Effective Date: April 8, 2025</p>
+
+        <p>This privacy policy describes how the <strong>SQAAF Folder Utility</strong> web application (developed using
+            Google Apps Script) uses your information.</p>
+
+        <h2>1. Information Collection</h2>
+        <p>This app does <strong>not collect, store, or transmit any personal data</strong> to any external server or
+            third-party service. All actions occur securely within your Google account environment.</p>
+
+        <h2>2. Google Drive Access</h2>
+        <p>The app requires access to your Google Drive to:</p>
+        <ul>
+            <li>Create a folder structure called "SQAAF" with 128 standard subfolders.</li>
+            <li>Allow you to share a folder with others.</li>
+            <li>Allow you to clone a shared folder to your own Drive.</li>
+        </ul>
+        <p>This access is limited to only what is necessary and happens with your explicit permission.</p>
+
+        <h2>3. Data Usage</h2>
+        <p>No data is collected, stored, or processed outside of your own Google account. All interactions with your
+            Drive are handled by Google Apps Script and stay within your account's security boundaries.</p>
+
+        <h2>4. Consent</h2>
+        <p>By using this app, you consent to the limited use of your Google Drive only for the folder operations
+            described above.</p>
+
+        <h2>5. Changes to This Policy</h2>
+        <p>This policy may be updated in the future. All updates will be posted on this page.</p>
+
+        <h2>6. Contact</h2>
+        <p>If you have questions about this policy, please contact the developer at:
+            <strong>vedantkawade.services@gmail.com</strong>
+        </p>
+    </div>
+
+    <script>
+        const translations = {
+            hi: `
+                <h1>गोपनीयता नीति</h1>
+                <p>प्रभावी तिथि: 8 अप्रैल, 2025</p>
+                
+                <p>यह गोपनीयता नीति <strong>SQAAF Folder Utility</strong> वेब एप्लिकेशन (जो Google Apps Script का उपयोग करके विकसित की गई है) आपके जानकारी के उपयोग को वर्णित करती है।</p>
+                
+                <h2>1. जानकारी संग्रहण</h2>
+                <p>यह ऐप <strong>कोई व्यक्तिगत डेटा एकत्रित, संग्रहीत या किसी बाहरी सर्वर या थर्ड-पार्टी सेवा को स्थानांतरित नहीं करती</strong>। सभी क्रियाएं आपके Google खाते के भीतर सुरक्षित रूप से होती हैं।</p>
+                
+                <h2>2. Google Drive पहुंच</h2>
+                <p>ऐप को आपके Google Drive तक पहुंच की आवश्यकता होती है ताकि वह निम्नलिखित कर सके:</p>
+                <ul>
+                  <li>"SQAAF" नामक फ़ोल्डर संरचना बनाना जिसमें 128 मानक सबफ़ोल्डर हों।</li>
+                  <li>किसी फ़ोल्डर को दूसरों के साथ साझा करने की अनुमति देना।</li>
+                  <li>साझा किए गए फ़ोल्डर को आपके अपने Drive में क्लोन करने की अनुमति देना।</li>
+                </ul>
+                <p>यह पहुंच केवल आवश्यक चीजों तक सीमित होती है और आपकी स्पष्ट अनुमति से ही होती है।</p>
+                
+                <h2>3. डेटा का उपयोग</h2>
+                <p>कोई भी डेटा आपके Google खाते के बाहर एकत्रित, संग्रहीत या संसाधित नहीं किया जाता है। आपके Drive के साथ सभी इंटरैक्शन Google Apps Script द्वारा संभाले जाते हैं और आपके खाते की सुरक्षा सीमाओं के भीतर रहते हैं।</p>
+                
+                <h2>4. सहमति</h2>
+                <p>इस ऐप का उपयोग करके, आप केवल उपरोक्त वर्णित फ़ोल्डर क्रियाओं के लिए अपने Google Drive के सीमित उपयोग की सहमति देते हैं।</p>
+                
+                <h2>5. इस नीति में परिवर्तन</h2>
+                <p>इस नीति को भविष्य में अपडेट किया जा सकता है। सभी अपडेट इस पृष्ठ पर पोस्ट किए जाएंगे।</p>
+                
+                <h2>6. संपर्क</h2>
+                <p>यदि आपके पास इस नीति के बारे में कोई प्रश्न हैं, तो कृपया डेवलपर से संपर्क करें: <strong>vedantkawade.services@gmail.com</strong></p>
+            `,
+            mr: `
+                <h1>गोपनीयता धोरण</h1>
+                <p>प्रभावी तारीख: ८ एप्रिल, २०२५</p>
+            
+                <p>हे गोपनीयता धोरण <strong>SQAAF Folder Utility</strong> वेब अ‍ॅप्लिकेशन (Google Apps Script वापरून विकसित केलेले) तुमची माहिती कशी वापरते हे स्पष्ट करते.</p>
+            
+                <h2>१. माहिती संकलन</h2>
+                <p>हे अ‍ॅप कोणतीही <strong>वैयक्तिक माहिती संकलित, संचयित किंवा बाह्य सर्व्हरवर प्रसारित करत नाही</strong>. सर्व क्रिया तुमच्या Google खात्याच्या सुरक्षिततेच्या मर्यादेत होतात.</p>
+            
+                <h2>२. Google Drive प्रवेश</h2>
+                <p>हे अ‍ॅप खालील गोष्टींसाठी तुमच्या Google Drive मध्ये प्रवेश मागते:</p>
+                <ul>
+                  <li>"SQAAF" नावाची १२८ मानके सबफोल्डर असलेली फोल्डर रचना तयार करणे.</li>
+                  <li>तुम्ही फोल्डर इतरांशी शेअर करू शकता.</li>
+                  <li>कोणताही शेअर केलेला फोल्डर तुमच्या स्वत:च्या Drive मध्ये क्लोन करू शकता.</li>
+                </ul>
+                <p>हा प्रवेश फक्त आवश्यक गोष्टींसाठी मर्यादित असतो आणि तुमच्या स्पष्ट संमतीनेच दिला जातो.</p>
+
+                <h2>३. डेटा वापर</h2>
+                <p>तुमच्या Google खात्याबाहेर कोणतीही माहिती संकलित, संचयित किंवा प्रक्रिया केली जात नाही. सर्व क्रिया Google Apps Script द्वारे केली जातात आणि तुमच्या खात्याच्या सुरक्षित मर्यादेत राहतात.</p>
+
+                <h2>४. संमती</h2>
+                <p>हे अ‍ॅप वापरल्याने, वर नमूद केलेल्या फोल्डर ऑपरेशन्ससाठीच तुमच्या Google Drive चा मर्यादित वापर होईल यास तुम्ही संमती देता.</p>
+
+                <h2>५. धोरणात बदल</h2>
+                <p>हे धोरण भविष्यात अद्यतनित केले जाऊ शकते. सर्व अद्यतने या पानावर पोस्ट केली जातील.</p>
+
+                <h2>६. संपर्क</h2>
+                <p>या धोरणाबद्दल तुमच्याकडे प्रश्न असल्यास कृपया डेव्हलपरशी संपर्क साधा: <strong>vedantkawade.services@gmail.com</strong></p>
+
+            `
+        };
+
+        function setLanguage(lang) {
+            document.getElementById("policy").innerHTML = translations[lang];
+        }
+    </script>
+</body>
+
+</html>
