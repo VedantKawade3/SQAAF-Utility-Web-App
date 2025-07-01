@@ -151,6 +151,19 @@
         function setLanguage(lang) {
             document.getElementById("policy").innerHTML = translations[lang];
         }
+        
+        // Auto-detect user's state and set language accordingly
+        fetch('https://ipapi.co/json/')
+            .then(response => response.json())
+            .then(data => {
+                const userRegion = data.region; // e.g., "Maharashtra"
+                if (userRegion && userRegion.toLowerCase().includes("maharashtra")) {
+                    setLanguage('mr');
+                }
+            })
+            .catch(error => {
+                console.error('IP location fetch failed:', error);
+            });
     </script>
 </body>
 
