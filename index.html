@@ -1,8 +1,93 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="refresh" content="0; url=https://script.google.com/macros/s/AKfycbzMfnkSr-3koo2rsWkNy2fU-B8czb8G4BC9QW7wJ-WBiiv0pt_-s5lyMqOufEamuwxe/exec">
+  <meta http-equiv="refresh" content="1; url=https://script.google.com/macros/s/AKfycbzMfnkSr-3koo2rsWkNy2fU-B8czb8G4BC9QW7wJ-WBiiv0pt_-s5lyMqOufEamuwxe/exec">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #d1e9ff, #f4f9ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .loader-card {
+      background: rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 20px;
+      padding: 40px 60px;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    }
+
+    .ripple-loader {
+      position: relative;
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 20px auto;
+    }
+
+    .ripple-loader div {
+      position: absolute;
+      border: 4px solid #4CAF50;
+      opacity: 1;
+      border-radius: 50%;
+      animation: ripple 1.2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    }
+
+    .ripple-loader div:nth-child(2) {
+      animation-delay: -0.6s;
+    }
+
+    @keyframes ripple {
+      0% {
+        top: 28px;
+        left: 28px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+      }
+      100% {
+        top: -1px;
+        left: -1px;
+        width: 60px;
+        height: 60px;
+        opacity: 0;
+      }
+    }
+
+    .loading-text {
+      font-size: 1.2rem;
+      color: #333;
+      letter-spacing: 0.5px;
+    }
+
+    .sub-text {
+      margin-top: 5px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
-  Redirecting to SQAAF Web App...
+  <div class="loader-card">
+    <div class="ripple-loader">
+      <div></div>
+      <div></div>
+    </div>
+    <div class="loading-text">Launching SQAAF Folder Utility...</div>
+    <div class="sub-text">This won't take long ⏳</div>
+  </div>
 </body>
 </html>
